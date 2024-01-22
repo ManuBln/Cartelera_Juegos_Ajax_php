@@ -1,0 +1,56 @@
+Proyecto
+
+Realiza una página web de temática libre que te de información sobre la temática que has
+elegido. Por ejemplo que haya una lista de videojuegos y te de su descripción leyendo los
+datos de un archivo .php.
+
+HTML y CSS
+
+La parte de HTML y CSS como dije anteriormente, de temática libre. Recordad que cada
+ítem que pongáis en el HTML para acceder a sus datos debe tener una referencia al
+archivo php, por ejemplo:
+- <p><a id="enlace1" href="datos.php?cod=1">Super Mario Bros</a></p>
+
+Javascript
+
+En Javascript programa la parte del evento que ocurre al hacer click en el ítem que hayas
+puesto en tu página web
+En Ajax crea un nuevo objeto XMLHttpRequest donde tienes que abrir y enviar la
+petición además de realizar una función que procese el evento según sus estados.
+
+Datos.php
+
+CFGS Desarrollo de Aplicaciones Web / CFGS Desarrollo de Aplicaciones Multiplataforma
+MEDAC, Instituto Oficial de Formación Profesional
+Realiza un archivo php con mínimo 5 ítems a los que se deben acceder para poner datos.
+Este sería el ejemplo de un videojuego:
+- if ($_REQUEST['cod'] == 1)
+- echo "Super Mario Bros. - Disfrutarás de aventuras coloridas
+y emocionantes en el Reino Champiñón.";
+
+
+
+
+Nota extra
+Puedes ganar un poco de nota extra para el apartado de actitud (10%). Para ello se propone
+lo siguiente:
+1. Añadir JSON al proyecto
+Json
+Crea un archivo en JSON con otros datos, el formato de JSON es el siguiente, poniendo
+de ejemplo los signos del horóscopo:
+"1": {
+"signo": "Aries",
+"descripcion": "Hoy los cambios serán físicos, personales, de
+carácter. Te sentirás impulsivo y tomarás iniciativas. Período en
+donde considerarás unirte a agrupaciones de beneficencia, o de ayuda
+a los demás."
+},
+Modificación HTML y JS
+Modifica el HTML y JS para que funcione correctamente la lectura del JSON. Para la
+parte de JS debes:
+- Introducir el path del JSON en el método “open()” de Ajax
+- Modificar la función que hayas tenido que crear para procesar los eventos según
+su estado:
+- Se realiza un parse en el JSON para leer los datos: var horoscopos =
+JSON.parse(conexion1.responseText);
+- Haciendo uso de innerHTML lees cada atributo del JSON

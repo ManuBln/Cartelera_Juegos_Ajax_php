@@ -1,0 +1,72 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartelera de videojuegos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <style>
+        body{
+            background-image: url("Imágenes/fondo.pg.jpg");
+            background-size: cover;
+        }
+        #contenedor {
+            margin-top: 5%;
+        }
+
+        img {
+            border-radius: 5%;
+            width: 15%;
+            height: 15%;
+            margin-left: 2%;
+        }
+
+        #juegos {
+            background-color: hsl(208, 100%, 97%,0.7);
+            border-radius: 5px 5px 5px 5px;
+            margin-left: 15%;
+            width: 70%;
+            margin-top: 5%;
+        }
+        #cargando{
+            background-color: hsl(208, 100%, 97%,0.7);
+            border: 1px solid black;
+            width: 10%;
+            border-radius: 5px 5px 5px 5px;
+            margin-left: 43%;
+        }
+    </style>
+
+    <header>
+
+        <h1 id="titulo" class="text-center mt-2">Cartelera de Videojuegos</h1>
+
+    </header>
+
+    <main>
+        <div id="contenedor" class="text-center">
+            <img id="img1" src="Imágenes/phambofobia.jpg" alt="Phasmophobia" onclick="datos(1)">
+            <img id="img2" src="Imágenes/until.png" alt="Until Dawn" onclick="datos(2)">
+            <img id="img3" src="Imágenes/godofwar.jpg" alt="God of War" onclick="datos(3)">
+            <img id="img4" src="Imágenes/lol.jpg" alt="League of Legends" onclick="datos(4)">
+            <img id="img5" src="Imágenes/daysgone.jpg" alt="Days Gone" onclick="datos(5)">
+        </div>
+
+        <p id="cargando" class="text-center mt-5" style="display: none;">Cargando ...</p>
+        <div id="juegos" class="text-center"></div>
+
+
+
+    </main>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
